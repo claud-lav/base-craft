@@ -6,3 +6,5 @@
 4. Install vite plugin --> npm install vite-plugin
 5. Add maps and documents from above 
 6. Update git ignore 
+7. Get phpmyadmin to open database in browser --> ddev get ddev/ddev-phpmyadmin | To open database --> ddev phpmyadmin 
+
