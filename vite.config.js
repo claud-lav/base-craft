@@ -1,5 +1,5 @@
 import ViteRestart from 'vite-plugin-restart';
- 
+
 export default ({
     command
 }) => ({
