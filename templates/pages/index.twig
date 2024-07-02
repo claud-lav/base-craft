@@ -1,7 +1,7 @@
 {% extends "layouts/base.twig" %}
 
 {% block content %}
-    {% if entry.f_contentBuikder %}
+    {% if entry.f_contentBuilder %}
         {% set sections = entry.f_contentBuilder.all() %}
         {% for section in sections %}
             {% include "partials/" ~ section.type.handle|kebab %}
