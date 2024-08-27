@@ -1,0 +1,13 @@
+/.env
+/.env.example.dev
+/.env.example.production
+/.env.example.staging
+/.idea
+/vendor
+.DS_Store
+/node_modules
+/.ddev 
+/db_backups
+/web/uploads
+/web/cpresources
+/web/assets
