@@ -2,8 +2,7 @@
 
 ## Installation Craft
 1. Follow instructions in documentation to install craft https://craftcms.com/docs/5.x/install.html 
-2. Add the folder and document from above to you base installation 
-3. Get phpmyadmin to open database in browser --> ddev get ddev/ddev-phpmyadmin | To open database --> ddev phpmyadmin 
+2. Add the folders and documents from above to your base installation
 
 ## Required Plugins 
 
