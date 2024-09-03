@@ -9,7 +9,9 @@
     {# Add build document in web/dist after build  #}
 </head>
 <body>
+    {% include "partials/header.twig" %}
     {% block content %}{% endblock %}
+    {% include "partials/footer.twig" %}
     {{ craft.vite.script("src/scripts/main.js") }} 
 </body>
 </html>
