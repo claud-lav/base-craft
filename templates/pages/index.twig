@@ -1,10 +1,6 @@
 {% extends "layouts/base.twig" %}
 
 {% block content %}
-    {% if entry.f_contentBuilder %}
-        {% set sections = entry.f_contentBuilder.all() %}
-        {% for section in sections %}
-            {% include "partials/" ~ section.type.handle|kebab %}
-        {% endfor %}
-    {% endif %}
+    {# Bekijkt welke entry type je pagina geeft en verwijst door naar die soort entry #}
+    {% include "pages/" ~ entry.type.handle|kebab ~ ".twig" %}
 {% endblock %}
