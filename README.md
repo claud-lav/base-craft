@@ -21,7 +21,7 @@ Installations project terminal:
 
 ## Styling with live changes
 
-1. Make shure vite is already installed 
+1. Make sure vite is already installed 
 2. Install sass -> npm install sass 
 3. Install vite -> npm install vite
 4. Install vite plugin --> npm install vite-plugin-restart
@@ -32,7 +32,7 @@ Installations project terminal:
 
 1. Install phpmyadmin for ddev ->  ddev get ddev/ddev-phpmyadmin
 2. Restart ddev -> ddev restart
-3. Open database -> dde phpmyadmin 
+3. Open database -> ddev phpmyadmin 
 
 ## Templates 
 
