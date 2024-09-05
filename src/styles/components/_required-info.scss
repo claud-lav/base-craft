@@ -1,0 +1,69 @@
+.required {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+
+    @include screen($screen-s){
+        flex-direction: row;
+    } 
+
+    &__credentials {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.25rem;
+        font-size: .75rem;
+        
+        p {
+            font-size: .75rem;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $clr-white;
+        font-size: .75rem;
+
+        &:hover {
+            cursor: pointer;
+            color: $clr-primary;
+        }
+    }
+
+    &__gdprItem {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: fit-content;
+        
+        &::after {
+            content: "";
+            display: block;
+            height: 0.1rem;
+            width: 0.4rem;
+            background-color: white;
+            margin-left: 0.5rem;
+            text-decoration: none;
+        }
+    }
+
+    &__link {
+        color: $clr-white;
+        font-family: $ff;
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &__g {
+        height: 1rem;
+        width: auto;
+        aspect-ratio: 1/1;
+    }
+}

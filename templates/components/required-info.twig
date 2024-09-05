@@ -1,0 +1,16 @@
+{% set gdprs = craft.entries().section('pages').addGdpr(true).all() %}
+
+<div class="requiredInfo__container">
+    <div class="requiredInfo__credentials">
+        <p>© Miles - BTW BE{{ companyInfo.f_btw|slice(0, 4) }}.{{ companyInfo.f_btw|slice(4, 3) }}.{{ companyInfo.f_btw|slice(7, 3) }} - </p>
+        {% for item in gdprs %}
+            <a class="requiredInfo__gdprItem" href="{{ item.url }}">{{ item.altTitle is not null ? item.altTitle : item.title }}</a>
+        {% endfor %}
+    </div>
+    <div class="requiredInfo__madeBy">
+        <a class="requiredInfo__link" href="https://www.likeavirgin.be/nl" aria-label="Bezoek de site van de maker van deze site">                 
+            {{ svg("assets/icons/g.svg")|attr({class: 'requiredInfo__g' }) }} 
+            Like a Virgin
+        </a>
+    </div>
+</div>
