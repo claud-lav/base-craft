@@ -1,8 +1,12 @@
-.required {
+@use "../abstracts" as *;
+
+.requiredInfo {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     gap: 1rem;
+    padding-block: 1rem;
 
     @include screen($screen-s){
         flex-direction: row;
@@ -28,24 +32,27 @@
 
         &:hover {
             cursor: pointer;
-            color: $clr-primary;
+            color: $clr-black;
         }
     }
 
-    &__gdprItem {
+    &__item {
         display: flex;
         flex-direction: row;
         align-items: center;
         width: fit-content;
         
         &::after {
-            content: "";
+            content: "-";
             display: block;
-            height: 0.1rem;
-            width: 0.4rem;
-            background-color: white;
-            margin-left: 0.5rem;
-            text-decoration: none;
+            margin: 0 0.25rem;
+
+        }
+
+        &:last-child {
+            &::after {
+                content: none;
+            }
         }
     }
 

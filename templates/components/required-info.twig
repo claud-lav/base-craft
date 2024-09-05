@@ -1,10 +1,12 @@
 {% set gdprs = craft.entries().section('pages').addGdpr(true).all() %}
+{% set contact = craft.entries.section('contact').one() %}
 
-<div class="requiredInfo__container">
+<div class="requiredInfo margin">
     <div class="requiredInfo__credentials">
-        <p>© Miles - BTW BE{{ companyInfo.f_btw|slice(0, 4) }}.{{ companyInfo.f_btw|slice(4, 3) }}.{{ companyInfo.f_btw|slice(7, 3) }} - </p>
+        <p class="requiredInfo__item">© Despierre</p>
+        <p class="requiredInfo__item">BTW BE{{ contact.f_btw}}</p>
         {% for item in gdprs %}
-            <a class="requiredInfo__gdprItem" href="{{ item.url }}">{{ item.altTitle is not null ? item.altTitle : item.title }}</a>
+            <a class="requiredInfo__item requiredInfo__link" href="{{ item.url }}">{{ item.altTitle is not null ? item.altTitle : item.title }}</a>
         {% endfor %}
     </div>
     <div class="requiredInfo__madeBy">
